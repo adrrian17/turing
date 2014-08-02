@@ -6,7 +6,9 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
-  config.vm.network "forwarded_port", host: 6000, guest: 8080
+  config.vm.network "forwarded_port", guest: 3000, host: 3000
+
+  config.ssh.forward_agent = true
 
   config.vm.provider "virtualbox" do |vb|
     vb.gui = false
@@ -15,4 +17,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell do |s|
     s.path = "bootstrap.sh"
   end
+
+  config.vm.provision :shell, :path => "install-rvm.sh",  :args => "stable"
+  config.vm.provision :shell, :path => "install-ruby.sh", :args => "2.1.2 jekyll"
 end
