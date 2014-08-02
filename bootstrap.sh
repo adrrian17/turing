@@ -13,3 +13,4 @@ sudo apt-get install -y curl git libcurl4-openssl-dev freetds-dev nodejs
 sudo apt-get install -y npm
 sudo npm install -g coffee-script
 sudo npm install -g gulp
+sudo npm install -g express-generator@4
