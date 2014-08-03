@@ -9,23 +9,43 @@ My personal Vagrant development enviroment
 ## Quick Start 
 Follow this instructions to setup Turing VM:
 
+- Clone the repo  
+
 ```
-# clone the repo
 $ git clone https://github.com/adrrian17/turing.git 
+```
 
-# boot the VM, this will install all the dependencies
+- Boot the VM, this will install all the dependencies
+
+```
 $ vagrant up 
+```
 
-# log into the VM
+- Log into the VM and start hacking
+
+```
 $ vagrant ssh
 ```
 
 ## What's inside
-- Node.js 
-- gulp.js
+The following is the list of what is installed when running the ```vagrant up```
+command.
+
 - CoffeeScript
 - Express.js
-- Ruby 2.1.2
-- rvm
+- Git
+- Node.js 
 - Jekyll
-- git
+- gulp.js
+- Ruby 2.1.2
+- RVM
+
+# Contributing
+If you would like to contribute to the project, follow these steps:
+
+- [Fork](https://github.com/adrrian17/turing/fork) the project.
+- Clone down your fork ( ```git clone git@github.com:<username>/turing.git``` ).
+- Create a topic branch to contain your change ( ```git checkout -b my-awesome-feature``` ).
+- Make sure everything still works in the VM.
+Push the branch up ( ```git push origin my-awesome-feature``` ).
+- Create a pull request and describe what your change does and the why you think it should be merged.
