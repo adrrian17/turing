@@ -9,5 +9,5 @@
 - Fixes Ruby and Jekyll installation process
 
 ## v0.1.0
-- Initial release. Includes a Vagrant file to create a development envoriment with Node.js and Ruby,
+- Initial release. Includes a Vagrant file to create a development environment with Node.js and Ruby,
 along with gulp.js and CoffeeScript.
