@@ -11,13 +11,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
 
   config.vm.provider "virtualbox" do |vb|
-    vb.gui = false
+    vb.gui    = false
+    vb.memory = 1024
+    vb.name   = "turing"
   end
 
-  config.vm.provision :shell do |s|
-    s.path = "bootstrap.sh"
-  end
+  config.vm.provision :file, :source => "~/.gitconfig", :destination => "~/.gitconfig"
 
+  config.vm.provision :shell, :path => "bootstrap.sh"
   config.vm.provision :shell, :path => "install-rvm.sh",  :args => "stable"
   config.vm.provision :shell, :path => "install-ruby.sh", :args => "2.1.2 jekyll"
 end

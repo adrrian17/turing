@@ -7,7 +7,7 @@
  shift
 
  if (( $# ))
- then gem install $@
+ then gem install $@ --no-ri --no-rdoc
  fi
 
 rvm alias create default 2.1.2
