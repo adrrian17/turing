@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v0.2.0
+
+### Minor Enhancements
+- Copies the host ```.gitconfig``` file to the VM
+- Upgrades VM RAM to 1GB
+- Adds Bower, Grunt, n, nodemon and Yeoman global packages
+
 ## v0.1.1
 
 ### Minor Enhancements
