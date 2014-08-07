@@ -18,3 +18,5 @@ sudo npm install -g express-generator@4
 sudo npm install -g n
 sudo npm install -g nodemon
 sudo npm install -g yo
+sudo npm install -g bower
+sudo npm install -g grunt-cli

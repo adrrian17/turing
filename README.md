@@ -30,15 +30,17 @@ $ vagrant ssh
 ## What's inside
 The following is the list of what is installed when running ```vagrant up```.
 
+- Bower
 - Bundler
 - CoffeeScript
 - Express.js
 - Git
+- Grunt
+- gulp.js
 - n
 - Node.js
 - nodemon
 - Jekyll
-- gulp.js
 - Ruby 2.1.2
 - RVM
 - Yeoman
