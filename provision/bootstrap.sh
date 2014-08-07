@@ -9,8 +9,14 @@ sudo apt-get -y upgrade
 # Dependencies
 sudo apt-get install -y curl git libcurl4-openssl-dev freetds-dev nodejs
 
-# Npm packages
+# npm packages
 sudo apt-get install -y npm
+
 sudo npm install -g coffee-script
 sudo npm install -g gulp
 sudo npm install -g express-generator@4
+sudo npm install -g n
+sudo npm install -g nodemon
+sudo npm install -g yo
+sudo npm install -g bower
+sudo npm install -g grunt-cli
