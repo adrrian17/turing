@@ -8,8 +8,6 @@
 ## Quick Start 
 Follow this steps to setup Turing:
 
-- Clone the repo  
-
 ```bash
 # Clone the repo
 $ git clone https://github.com/adrrian17/turing.git 
