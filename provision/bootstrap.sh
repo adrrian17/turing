@@ -9,8 +9,11 @@ sudo apt-get -y upgrade
 # Dependencies
 sudo apt-get install -y curl git libcurl4-openssl-dev freetds-dev nodejs
 
+# Docker
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+
 # npm packages
-sudo apt-get install -y npm
+# sudo apt-get install -y npm
 
 sudo npm install -g coffee-script
 sudo npm install -g gulp
