@@ -1,22 +1,22 @@
 # Turing
-> My personal development enviroment 
+> My personal development enviroment
 
 ## Requeriments
 - [Oracle VM Virtual Box](https://www.virtualbox.org/)
 - [Vagrant](http://www.vagrantup.com/)
 
-## Quick Start 
+## Quick Start
 Follow this steps to setup Turing:
 
 ```bash
 # Clone the repo
-$ git clone https://github.com/adrrian17/turing.git 
+$ git clone https://github.com/adrrian17/turing.git
 
 # Boot the VM, this will install all the dependencies
 $ vagrant up
 
 # Log into the VM and start hacking
-$ vagrant ssh 
+$ vagrant ssh
 ```
 
 ## What's inside
@@ -25,6 +25,7 @@ The following is the list of what is installed when running ```vagrant up```.
 - Bower
 - Bundler
 - CoffeeScript
+- Docker
 - Express.js
 - Git
 - Grunt
@@ -35,13 +36,13 @@ The following is the list of what is installed when running ```vagrant up```.
 - Jekyll
 - Ruby 2.1.2
 - RVM
-- Ubuntu Server 64-bit 14.04 
+- Ubuntu Server 64-bit 14.04
 - Yeoman
 
 ## Contributing
 If you would like to contribute to the project, follow these steps:
 
-- [Fork the project.](https://github.com/adrrian17/turing/fork) 
+- [Fork the project.](https://github.com/adrrian17/turing/fork)
 - Clone down your fork ( ```git clone git@github.com:<username>/turing.git``` ).
 - Create a topic branch to contain your change ( ```git checkout -b my-awesome-feature``` ).
 - Make sure everything still works in the VM.
